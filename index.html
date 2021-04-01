@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Pay</title>
+</head>
+<style>
+    @font-face {
+        font-family: "PoppinsBold";
+        src: url("./assets/fonts/Poppins-Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "PoppinsMedium";
+        src: url("./assets/fonts/Poppins-Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "PoppinsRegular";
+        src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+    }
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+    .container {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    .container-image {
+        position: absolute;
+        top: -280px;
+        right: -300px;
+        z-index: 1;
+    }
+    .content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitle {
+        font-family: PoppinsBold;
+        font-size: 20px;
+        color: #073b4c;
+        margin: 20px;
+    }
+    .text {
+        font-family: PoppinsRegular;
+    }
+    .last-text {
+        font-family: PoppinsRegular;
+        color: #2851e7;
+        margin-top: 40px;
+    }
+    .link {
+        font-weight: bold;
+        text-decoration: underline;
+        font-family: PoppinsMedium;
+        cursor: pointer;
+    }
+</style>
+<body>
+<script src="./js//index.js"></script>
+<div class="container">
+    <img class="container-image" src="./assets/shape.png" alt="fondo">
+    <div class="content">
+        <img class="title" src="./assets/personal-pay.png" alt="title">
+        <span class="subtitle">Ingresá desde tu celular</span>
+        <span class="text">Entrá al mail desde tu teléfono y abrí el link</span>
+        <span class="text">con la app de Personal Pay.</span>
+        <span class="last-text">¿Necesitas ayuda? <span class="link" onclick="openEmail()">Contactanos</span></span>
+    </div>
+</div>
+</body>
+</html>
