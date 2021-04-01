@@ -11,7 +11,7 @@ const init = () => {
         if (new Date().valueOf() - now > 100) return;
         // window.location = "https://itunes.apple.com/appdir";
     }, 25);
-    window.location = "com.identicum.mobile.qa://linkingScreenRoute/10";
+    window.location = "ar.com.personalpay://linkingScreenRoute/10";
 }
 
 
