@@ -20,7 +20,7 @@ const init = () => {
         window.location.href = "mensajes.html";
     }, 100);
         
-    if (useCase && token && username) 
+    if (route) 
     window.location = `ar.com.personalpay://${route}`;
 }
 
