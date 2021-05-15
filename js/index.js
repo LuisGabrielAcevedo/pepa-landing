@@ -17,13 +17,10 @@ const init = () => {
     const queryParams = new URLSearchParams(window.location.search);
     const route = queryParams.get('route');
     console.log(route)
-    // setTimeout(function () {
-    //     window.location.href = "mensajes.html";
-    // }, 100);
-        
-    if (route) 
-    console.log(`ar.com.personalpay://${route}`);
-    window.location = `ar.com.personalpay://${route}`;
+    setTimeout(function () {
+        window.location.href = "mensajes.html";
+    }, 1000); 
+    if (route) window.location = `ar.com.personalpay://${route}/email`;
 }
 
 init();
