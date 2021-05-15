@@ -16,9 +16,9 @@
 const init = () => {
     const queryParams = new URLSearchParams(window.location.search);
     const route = queryParams.get('route');
-    setTimeout(function () {
-        window.location.href = "mensajes.html";
-    }, 100);
+    // setTimeout(function () {
+    //     window.location.href = "mensajes.html";
+    // }, 100);
         
     if (route) 
     window.location = `ar.com.personalpay://${route}`;
