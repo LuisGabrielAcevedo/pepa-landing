@@ -22,7 +22,7 @@ const init = () => {
     // }, 1000); 
     // if (route) 
     
-    window.location = `ar.com.personalpay://${route}/email`;
+    window.location = `ar.com.personalpay://linkingRoutes/${route}/email`;
 }
 
 init();
