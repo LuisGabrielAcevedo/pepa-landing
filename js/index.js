@@ -16,12 +16,9 @@
 const init = () => {
     const queryParams = new URLSearchParams(window.location.search);
     const route = queryParams.get('route');
-    // console.log(route)
-    // setTimeout(function () {
-    //     window.location.href = "mensajes.html";
-    // }, 1000); 
-    // if (route) 
-    
+    setTimeout(function () {
+        window.location.href = "mensajes.html";
+    }, 1000);
     window.location = `ar.com.personalpay://linkingRoutes/${route}/email`;
 }
 
