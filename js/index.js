@@ -17,7 +17,7 @@ const init = () => {
     const queryParams = new URLSearchParams(window.location.search);
     const route = queryParams.get('route');
     setTimeout(function () {
-        window.location.href = "mensajes.html";
+        window.location.href = window.innerWidth < 600 ? "https://play.google.com/store/apps/details?id=ar.com.personalpay " : "mensajes.html";
     }, 1000);
     window.location = `ar.com.personalpay://linkingRoutes/${route}/email`;
 }
